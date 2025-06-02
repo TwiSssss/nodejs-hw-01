@@ -1,12 +1,7 @@
-import { readContacts } from "../utils/readContacts.js";
+import { readContacts } from '../utils/readContacts.js';
 
 export const getAllContacts = async () => {
-    try {
-        await readContacts();
-        console.log("Дані успішно зчитано з файлу.");
-    } catch (err) {
-        console.error("Помилка під час зчитування даних із файлу:", err);
-    }
+ return await readContacts();
 };
 
 console.log(await getAllContacts());
